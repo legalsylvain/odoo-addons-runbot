@@ -15,7 +15,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
     <record id="runbot_repo_self" model="runbot.repo">
         <field name="name">https://github.com/grap/odoo-addons-runbot.git</field>
-        <field name="mode">Hook</field>
+        <field name="mode">hook</field>
         <field name="module_auto">repo</field>
         <field name="nginx" eval="True"/>
     </record>
