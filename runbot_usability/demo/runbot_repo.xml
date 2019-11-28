@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2019 - Today: GRAP (http://www.grap.coop)
+@author Sylvain LE GAL (https://twitter.com/legalsylvain)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+
+<odoo>
+
+    <record id="runbot_repo_odoo" model="runbot.repo">
+        <field name="name">https://github.com/odoo/odoo.git</field>
+        <field name="mode">disabled</field>
+        <field name="module_auto">none</field>
+    </record>
+
+    <record id="runbot_repo_self" model="runbot.repo">
+        <field name="name">https://github.com/grap/odoo-addons-runbot.git</field>
+        <field name="mode">Hook</field>
+        <field name="module_auto">repo</field>
+        <field name="nginx" eval="True"/>
+    </record>
+
+</odoo>
