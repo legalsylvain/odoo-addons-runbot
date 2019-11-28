@@ -7,7 +7,7 @@
     "version": "11.0.1.0.0",
     "category": "Configuration",
     "author": "GRAP",
-    "summary": "Add extra features for runbot module",
+    "summary": "Add extra features for runbot feature",
     "depends": ["runbot"],
     "license": "AGPL-3",
     "data": ["views/view_runbot_repo.xml"],
