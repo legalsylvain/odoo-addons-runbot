@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/odoo-cae/odoo-addons-hr-incubator.svg?branch=12.0)](https://travis-ci.org/odoo-cae/odoo-addons-hr-incubator?branch=12.0)
-[![Coverage Status](https://coveralls.io/repos/github/odoo-cae/odoo-addons-hr-incubator/badge.svg?branch=12.0)](https://coveralls.io/github/odoo-cae/odoo-addons-hr-incubator?branch=12.0)
-[![Code Climate](https://codeclimate.com/github/odoo-cae/odoo-addons-hr-incubator/badges/gpa.svg)](https://codeclimate.com/github/odoo-cae/odoo-addons-hr-incubator)
+[![Build Status](https://travis-ci.org/grap/odoo-addons-runbot.svg?branch=11.0)](https://travis-ci.org/grap/odoo-addons-runbot?branch=11.0)
+[![Coverage Status](https://coveralls.io/repos/github/grap/odoo-addons-runbot/badge.svg?branch=11.0)](https://coveralls.io/github/grap/odoo-addons-runbot?branch=11.0)
+[![Code Climate](https://codeclimate.com/github/grap/odoo-addons-runbot/badges/gpa.svg)](https://codeclimate.com/github/grap/odoo-addons-runbot)
 
 
 
-# odoo-addons-hr-incubator
+# odoo-addons-runbot
 
-Contains Odoo module for CAE regarding Human Ressources features (Used by Coopaname and GRAP)
+Various module for GRAP runbot instance.
