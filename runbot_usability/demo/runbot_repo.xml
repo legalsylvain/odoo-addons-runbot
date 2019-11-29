@@ -10,13 +10,14 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
     <record id="runbot_repo_odoo" model="runbot.repo">
         <field name="name">https://github.com/odoo/odoo.git</field>
         <field name="mode">disabled</field>
-        <field name="module_auto">none</field>
+        <field name="modules_auto">none</field>
     </record>
 
-    <record id="runbot_repo_self" model="runbot.repo">
-        <field name="name">https://github.com/grap/odoo-addons-runbot.git</field>
+    <record id="runbot_odoo_cae" model="runbot.repo">
+        <field name="name">https://github.com/odoo-cae/odoo-addons-hr-incubator.git</field>
+        <field name="dependency_ids" eval="[(4, ref('runbot_repo_odoo'))]"/>
         <field name="mode">hook</field>
-        <field name="module_auto">repo</field>
+        <field name="modules_auto">repo</field>
         <field name="nginx" eval="True"/>
     </record>
 

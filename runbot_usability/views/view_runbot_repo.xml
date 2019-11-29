@@ -10,18 +10,15 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="model">runbot.repo</field>
         <field name="inherit_id" ref="runbot.repo_form" />
         <field name="arch" type="xml">
-            <field name="addons_paths" position="after">
-                <group string="Extra information" col="4">
-                    <field name="short_name"/>
+            <xpath expr="//group[@name='repo_group']" position="after">
+                <group string="Extra information">
                     <field name="path"/>
                     <field name="base"/>
-                    <field name="get_ref_time"/>
-                    <field name="repo_config_id"/>
-                    <button type="object" name="clone" string="Clone"/>
-                    <button type="object" name="update_git" string="Update Git"/>
-                    <button type="object" name="update_git_force" string="Update Git (Force)"/>
                 </group>
-            </field>
+                <group string="Extra Buttons" col="8">
+                    <button type="object" name="update_git" string="Update Git"/>
+                </group>
+            </xpath>
         </field>
     </record>
 

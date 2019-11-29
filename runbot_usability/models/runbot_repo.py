@@ -9,17 +9,9 @@ from odoo.tools import config as odoo_config
 class RunbotRepo(models.Model):
     _inherit = "runbot.repo"
 
-    def clone(self):
-        for repo in self:
-            repo._clone()
-
     def update_git(self):
         for repo in self:
-            repo._update_git(False)
-
-    def update_git_force(self):
-        for repo in self:
-            repo._update_git(True)
+            repo._update_git()
 
     def _root(self):
         root_path = odoo_config.get("runbot_root_path", False)
